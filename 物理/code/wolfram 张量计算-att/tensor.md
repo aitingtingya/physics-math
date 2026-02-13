@@ -1,6 +1,6 @@
 (* 
 ```mathematica
-写了个小包简化mathematica里的张量计算，后面附了一些用例
+写了个小包简化mathematica里的张量计算，后面附了一些用例，wolfram的引擎可以直接运行md文件，所以我写的是一个md
 几个重要的函数
 defTensor[name_, rank_Integer, dim_Integer, vars_List]
 定义一个dim维流形上的名字为name，阶数为rank，依赖坐标vars的抽象张量，张量对 vars 的依赖不是抽线而是显式的，可以不用该函数
