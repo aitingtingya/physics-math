@@ -1,6 +1,7 @@
 (* 
 ```mathematica
-有几个重要的函数
+写了个小包简化mathematica里的张量计算，后面附了一些用例
+几个重要的函数
 defTensor[name_, rank_Integer, dim_Integer, vars_List]
 定义一个dim维流形上的名字为name，阶数为rank，依赖坐标vars的抽象张量，张量对 vars 的依赖不是抽线而是显式的，可以不用该函数
 所有参数都要填，如果是常张量，则 vars={}
