@@ -1,0 +1,214 @@
+(* Content-type: application/vnd.wolfram.cdf.text *)
+
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*                                                                       *)
+(*  This file was created under the Wolfram Enterprise licensing terms.  *)
+(*                                                                       *)
+(*       For additional information concerning CDF licensing see:        *)
+(*                                                                       *)
+(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
+(*                                                                       *)
+(*                                                                       *)
+(*                                                                       *)
+(*************************************************************************)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[      1060,         20]
+NotebookDataLength[      7370,        193]
+NotebookOptionsPosition[      7774,        189]
+NotebookOutlinePosition[      8221,        207]
+CellTagsIndexPosition[      8178,        204]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "\:8bbe\:7f6e\:5de6\:53f3\:8fb9\:8ddd", "\:ff0c", 
+    "\:7528\:6765\:4fdd\:8bc1y\:8f74\:663e\:793a\:5b8c\:6574", "\:ff0c", 
+    "\:4e3a\:5750\:6807\:8f74\:5de6\:53f3\:7684\:7559\:767d"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Leftboundary", " ", "=", " ", "45"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Rightboundary", " ", "=", " ", "30"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+   "(*", "\:5c06\:4e24\:4e2a\:56fe\:7528\:5217\:8868\:8fdb\:884c\:6392\:5217",
+     "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"padTop", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Leftboundary", ",", " ", "Rightboundary"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", " ", "10"}], "}"}]}], "}"}]}], ";"}], "   ", "\n", 
+   RowBox[{
+    RowBox[{"padBottom", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Leftboundary", ",", " ", "Rightboundary"}], "}"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"50", ",", " ", "0"}], "}"}]}], "}"}]}], ";"}], 
+   " "}]}]], "Input",
+ CellChangeTimes->{{3.9816689234843693`*^9, 3.981668981687933*^9}, {
+  3.981669089461092*^9, 
+  3.9816691357321243`*^9}},ExpressionUUID->"a2522184-6c51-2642-bd2d-\
+45eb1c40df85"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"plotpt", "=", 
+     RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"f", "[", "t", "]"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "10", ",", "100"}], "}"}], ",", 
+       RowBox[{
+       "(*", "\:8fd9\:91cc\:653e\:8981\:753b\:7684\:51fd\:6570", "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{"PlotStyle", "->", 
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{"Blue", ",", 
+           RowBox[{"Thickness", "[", "0.005", "]"}]}], "}"}], "}"}]}], ",", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"Frame", "->", "True"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameTicks", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"None", ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"FrameLabel", " ", "->", " ", 
+        RowBox[{"{", 
+         RowBox[{"None", ",", "None"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        "\:8fd9\:91cc\:7684\:5173\:952e\:662f\:4e0d\:663e\:793a\:4e0a\:9762\
+\:56fe\:7684\:4e0b\:523b\:5ea6", "\:ff0c", 
+         "\:7528\:4e0b\:9762\:56fe\:7684\:4e0a\:523b\:5ea6\:6765\:4f5c\:4e3a\
+\:5b83\:7684\:4e0b\:523b\:5ea6"}], "*)"}], "\n", "       ", 
+       RowBox[{"FrameStyle", " ", "->", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "18"}], "]"}]}], ",", "\n", "  ", "\n", 
+       "       ", 
+       RowBox[{"GridLines", " ", "->", " ", "Automatic"}], ",", "\n", 
+       "       ", 
+       RowBox[{"GridLinesStyle", " ", "->", " ", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"GrayLevel", "[", "0.8", "]"}], "]"}]}], ",", " ", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"PlotRange", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"10", ",", "100"}], "}"}], ",", "All"}], "}"}]}], ",", 
+       "\n", "       ", 
+       RowBox[{"ImagePadding", " ", "->", " ", "padTop"}], ",", "\n", 
+       "       ", 
+       RowBox[{"AspectRatio", "->", 
+        RowBox[{"1", "/", "4"}]}], ",", " ", "\n", "       ", 
+       RowBox[{"ImageSize", " ", "->", " ", "500"}]}], "\[IndentingNewLine]", 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"plotpx", "=", 
+     RowBox[{"LogLinearPlot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"g", "[", "t", "]"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "10", ",", "100"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"PlotStyle", "->", 
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{"Red", ",", 
+           RowBox[{"Thickness", "[", "0.005", "]"}]}], "}"}], "}"}]}], ",", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"Frame", "->", "True"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"FrameTicks", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
+       "\n", "       ", 
+       RowBox[{"FrameStyle", " ", "->", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "18"}], "]"}]}], ",", "\n", " ", "\n", 
+       "       ", 
+       RowBox[{"GridLines", " ", "->", " ", "Automatic"}], ",", "\n", 
+       "       ", 
+       RowBox[{"GridLinesStyle", " ", "->", " ", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"GrayLevel", "[", "0.8", "]"}], "]"}]}], ",", " ", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"PlotRange", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"10", ",", "100"}], "}"}], ",", "All"}], "}"}]}], ",", 
+       "\n", "       ", 
+       RowBox[{"ImagePadding", " ", "->", " ", "padBottom"}], ",", "\n", 
+       "       ", 
+       RowBox[{"AspectRatio", "->", 
+        RowBox[{"1", "/", "4"}]}], ",", " ", "\n", "       ", 
+       RowBox[{"ImageSize", " ", "->", " ", "500"}]}], "\[IndentingNewLine]", 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"finalFig", " ", "=", " ", 
+    RowBox[{"Column", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"plotpt", ",", " ", "plotpx"}], "}"}], ",", " ", 
+      RowBox[{"Spacings", " ", "->", " ", "0"}]}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.9816690122996902`*^9, 3.9816690803550205`*^9}, {
+  3.981669142729046*^9, 3.9816692381877003`*^9}, {3.9816692759376793`*^9, 
+  3.9816693119402714`*^9}},ExpressionUUID->"de1579b3-c72d-a14c-8a9f-\
+d4225a673782"]
+},
+WindowSize->{1920, 1011.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (2024\:5e747\:670816\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6fdb6383-589e-564b-85e0-4a409dc9f49b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[1460, 33, 1374, 37, 156, "Input",ExpressionUUID->"a2522184-6c51-2642-bd2d-45eb1c40df85"],
+Cell[2837, 72, 4933, 115, 1322, "Input",ExpressionUUID->"de1579b3-c72d-a14c-8a9f-d4225a673782"]
+}
+]
+*)
+
